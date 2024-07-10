@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <section class="left-panel">
+            <header>
+                <div class="logo">a</div>
+            </header>
+            <article>
+                <label for="inputText" class="sr-only">Ingrese el texto aquí</label>
+                <textarea id="inputText" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="buttons">
+                    <button id="encryptButton">Encriptar</button>
+                    <button id="decryptButton">Desencriptar</button>
+                </div>
+                <small class="note">Solo letras minúsculas y sin acentos</small>
+            </article>
+        </section>
+        <section class="right-panel">
+            <div id="messageContainer">
+                <img src="img/Muñeco.png" alt="Icono de búsqueda">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="outputTextContainer" style="display: none;">
+                <p id="outputText"></p>
+                <button id="copyButton">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
